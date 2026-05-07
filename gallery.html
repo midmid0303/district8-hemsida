@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleri | District 8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="gallery-page grain">
+    <div id="loader">
+        <div class="loader-content">
+            <img src="logo.png" alt="District 8" class="loader-logo">
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="logo.png" alt="D8 Logo" class="nav-logo">
+            </div>
+            <div class="nav-center">
+                <nav class="main-nav">
+                    <a href="index.html">HEM</a>
+                    <a href="index.html#events">EVENTS</a>
+                    <a href="index.html#about">OM OSS</a>
+                    <a href="gallery.html" class="active">GALLERI</a>
+                    <a href="#">KONTAKT</a>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="btn-ticket-red">KÖP BILJETT <span class="arrow">→</span></a>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <a href="index.html">HEM</a>
+                <a href="index.html#events">EVENTS</a>
+                <a href="index.html#about">OM OSS</a>
+                <a href="gallery.html" class="active">GALLERI</a>
+                <a href="#">KONTAKT</a>
+            </nav>
+            <div class="mobile-footer">
+                <a href="#" class="btn-ticket-red">KÖP BILJETT</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="gallery-main">
+        <section class="gallery-hero">
+            <div class="container">
+                <h1 class="page-title">PAST ARCHIVES</h1>
+                <p class="page-subtitle">MINNEN FRÅN DISTRIKTETS MÖRKASTE HÖRN.</p>
+            </div>
+        </section>
+
+        <section class="event-archives">
+            <div class="container">
+                <div class="archive-grid masonry">
+                    <!-- Event 1 - Large -->
+                    <div class="archive-item span-7">
+                        <div class="archive-img-wrap">
+                            <img src="event_street.jpg" alt="Neon Dragon">
+                            <div class="archive-overlay">
+                                <span class="photo-count">42 BILDER</span>
+                                <span class="view-btn">ÖPPNA ALBUM <i data-lucide="external-link"></i></span>
+                            </div>
+                        </div>
+                        <div class="archive-info">
+                            <span class="arch-date">MAJ 2025</span>
+                            <h3>NEON DRAGON</h3>
+                        </div>
+                    </div>
+
+                    <!-- Event 2 - Small -->
+                    <div class="archive-item span-5">
+                        <div class="archive-img-wrap">
+                            <img src="event_lasers.jpg" alt="Bao & Bass">
+                            <div class="archive-overlay">
+                                <span class="photo-count">38 BILDER</span>
+                                <span class="view-btn">ÖPPNA ALBUM <i data-lucide="external-link"></i></span>
+                            </div>
+                        </div>
+                        <div class="archive-info">
+                            <span class="arch-date">JUNI 2025</span>
+                            <h3>BAO & BASS</h3>
+                        </div>
+                    </div>
+
+                    <!-- Event 3 - Small -->
+                    <div class="archive-item span-5">
+                        <div class="archive-img-wrap">
+                            <img src="event_smoke.jpg" alt="Geisha Riot">
+                            <div class="archive-overlay">
+                                <span class="photo-count">56 BILDER</span>
+                                <span class="view-btn">ÖPPNA ALBUM <i data-lucide="external-link"></i></span>
+                            </div>
+                        </div>
+                        <div class="archive-info">
+                            <span class="arch-date">AUGUSTI 2025</span>
+                            <h3>GEISHA RIOT</h3>
+                        </div>
+                    </div>
+
+                    <!-- Event 4 - Wide -->
+                    <div class="archive-item span-7">
+                        <div class="archive-img-wrap">
+                            <img src="event_dj.jpg" alt="Seoul Soul">
+                            <div class="archive-overlay">
+                                <span class="photo-count">29 BILDER</span>
+                                <span class="view-btn">ÖPPNA ALBUM <i data-lucide="external-link"></i></span>
+                            </div>
+                        </div>
+                        <div class="archive-info">
+                            <span class="arch-date">JANUARI 2025</span>
+                            <h3>SEOUL SOUL UNDERGROUND</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="archive-grid masonry" style="margin-top: 60px;">
+                     <!-- Full Width item -->
+                     <div class="archive-item span-12">
+                        <div class="archive-img-wrap" style="aspect-ratio: 21/9;">
+                            <img src="event_street.jpg" alt="Laser Sutra">
+                            <div class="archive-overlay">
+                                <span class="photo-count">84 BILDER</span>
+                                <span class="view-btn">ÖPPNA ALBUM <i data-lucide="external-link"></i></span>
+                            </div>
+                        </div>
+                        <div class="archive-info">
+                            <span class="arch-date">DECEMBER 2025</span>
+                            <h3>LASER SUTRA NYE</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
