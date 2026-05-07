@@ -161,14 +161,11 @@ body::before {
 }
 
 .title-row-1 {
-    font-family: var(--font-main);
-    font-size: clamp(1rem, 2vw, 1.4rem);
-    font-weight: 700;
-    letter-spacing: 0.6rem;
-    text-transform: uppercase;
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 11vw, 12rem);
     color: var(--white);
-    opacity: 0.9;
-    margin-bottom: 0.5rem;
+    line-height: 0.9;
+    margin: 0;
 }
 
 .title-row-2 {
@@ -349,7 +346,7 @@ body::before {
     .hero { padding-top: 120px; justify-content: flex-start; }
     .hero-title-stack { gap: 0.5rem; margin-bottom: 30px; }
     .title-row-2 { flex-direction: column; gap: 0; }
-    .hero-eighth, .hero-district { font-size: 5rem; line-height: 0.85; }
+    .title-row-1, .hero-eighth, .hero-district { font-size: 5rem; line-height: 0.85; }
     .hero-subtitle { font-size: 0.95rem; margin-bottom: 30px; }
     .hero-btns { flex-direction: column; gap: 15px; width: 100%; max-width: 300px; }
     .btn-red, .btn-outline { padding: 14px 30px; text-align: center; width: 100%; }
