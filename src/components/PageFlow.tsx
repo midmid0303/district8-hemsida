@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 export default function PageFlow() {
   return (
     <main>
@@ -12,14 +13,13 @@ export default function PageFlow() {
         <div className="hero-content">
           <div className="hero-meta">
             <span className="line"></span>
-            <span>第八区 / ISSUE 014</span>
           </div>
 
           <div className="hero-title-stack">
-            <span className="title-eighth">EIGHTH</span>
-            <div className="title-main-col">
-              <h1 className="title-enter">ENTER THE</h1>
-              <span className="title-district">DISTRICT</span>
+            <h1 className="title-enter">ENTER THE</h1>
+            <div className="title-row">
+              <span className="title-eighth">DISTRICT</span>
+              <span className="title-district">EIGHT</span>
             </div>
           </div>
 
@@ -27,9 +27,9 @@ export default function PageFlow() {
             <a href="#events" className="btn-ticket-red">
               SÄKRA BILJETT <span className="arrow">→</span>
             </a>
-            <a href="#about" className="btn-manifest">
+            <Link to="/about" className="btn-manifest">
               VÅRT MANIFEST
-            </a>
+            </Link>
           </div>
 
           <p className="hero-subtitle">
@@ -62,21 +62,19 @@ export default function PageFlow() {
         <div className="marquee-container">
           <div className="marquee-content">
             <span>
-              BILJETTER LIVE NU ● 第八区 · THE 8TH DISTRICT ● NÄSTA DROP ·
-              23.05.26 · TRÄDGÅRDEN ● BILJETTER LIVE NU ● 第八区 · THE 8TH
-              DISTRICT ●
+              Nästa drop · 23.05.26 · Trädgården ● 第八区 · THE 8TH DISTRICT ●
+              BILJETTER LIVE NU ● Nästa drop · 23.05.26 · Trädgården ●
             </span>
             <span>
-              BILJETTER LIVE NU ● 第八区 · THE 8TH DISTRICT ● NÄSTA DROP ·
-              23.05.26 · TRÄDGÅRDEN ● BILJETTER LIVE NU ● 第八区 · THE 8TH
-              DISTRICT ●
+              Nästa drop · 23.05.26 · Trädgården ● 第八区 · THE 8TH DISTRICT ●
+              BILJETTER LIVE NU ● Nästa drop · 23.05.26 · Trädgården ●
             </span>
           </div>
         </div>
       </section>
 
       {/* 01 / MANIFEST */}
-      <section className="manifest" id="about">
+      <section className="manifest">
         <div className="manifest-container">
           <div className="section-meta">01 / MANIFEST</div>
           <div className="manifest-content">
@@ -110,10 +108,10 @@ export default function PageFlow() {
         <div className="events-container">
           <div className="events-header">
             <div className="header-left">
-              <h2 className="events-title">NÄSTA DROP</h2>
-              <div className="section-meta" style={{ marginTop: "-20px" }}>
+              <div className="section-meta">
                 02 / UPCOMING
               </div>
+              <h2 className="events-title">NÄSTA DROP</h2>
             </div>
             <a href="#" className="alla-events">
               ALLA EVENTS <span className="arrow">→</span>
@@ -121,25 +119,63 @@ export default function PageFlow() {
           </div>
 
           <div className="events-grid">
+            {/* Event Card 1 - NEON DRAGON */}
             <div className="event-card">
               <div className="card-img-wrap">
-                <img src="/event1.jpg" alt="Huvudevent" />
+                <img src="/event1.png" alt="Neon Dragon" />
                 <div className="card-tag">■ HUVUDEVENT</div>
                 <div className="card-idx">/ 001</div>
               </div>
+              <div className="card-info">
+                <h3 className="card-name">NEON DRAGON</h3>
+                <div className="card-details">
+                  <span className="card-venue">Trädgården, Stockholm</span>
+                  <span className="card-date">23 MAJ 2026</span>
+                </div>
+                <div className="card-bottom">
+                  <span className="card-price">FROM 349 SEK</span>
+                  <a href="#" className="card-btn">BILJETTER →</a>
+                </div>
+              </div>
             </div>
+
+            {/* Event Card 2 - BAO & BASS */}
             <div className="event-card">
               <div className="card-img-wrap">
-                <img src="/event2.jpg" alt="Pop-up" />
+                <img src="/event2.png" alt="Bao & Bass" />
                 <div className="card-tag">■ POP-UP</div>
                 <div className="card-idx">/ 002</div>
               </div>
+              <div className="card-info">
+                <h3 className="card-name">BAO &amp; BASS</h3>
+                <div className="card-details">
+                  <span className="card-venue">Pustervik, Göteborg</span>
+                  <span className="card-date">14 JUN 2026</span>
+                </div>
+                <div className="card-bottom">
+                  <span className="card-price">FROM 249 SEK</span>
+                  <a href="#" className="card-btn">BILJETTER →</a>
+                </div>
+              </div>
             </div>
+
+            {/* Event Card 3 - GEISHA RIOT */}
             <div className="event-card">
               <div className="card-img-wrap">
-                <img src="/event3.jpg" alt="Secret" />
+                <img src="/event3.png" alt="Geisha Riot" />
                 <div className="card-tag">■ SECRET</div>
                 <div className="card-idx">/ 003</div>
+              </div>
+              <div className="card-info">
+                <h3 className="card-name">GEISHA RIOT</h3>
+                <div className="card-details">
+                  <span className="card-venue">Hemlig adress</span>
+                  <span className="card-date">TBA</span>
+                </div>
+                <div className="card-bottom">
+                  <span className="card-price">INVITE ONLY</span>
+                  <a href="#" className="card-btn">NOTIFY ME →</a>
+                </div>
               </div>
             </div>
           </div>
